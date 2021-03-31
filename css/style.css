@@ -1,5 +1,5 @@
 body {
-  background-color: #DEB887;
+  background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -47,7 +47,7 @@ a:active {
   color: #191970;
 }
 
-<a href="#"class="button">Read More</a>.button {
+.button {
   display: inline-block;
   background-color: #DEB887;
   color: #ffffff;
@@ -63,7 +63,7 @@ a:active {
   text-decoration: none;
 }
 
-<a href="brownjarvis21@gmail.com"class="button contact">Email Me</a>.button.contact {
+.button.contact {
   background-color: transparent;
   color: #DEB887;
   text-transform: uppercase;
