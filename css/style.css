@@ -79,6 +79,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
+  text-align: center;
 }
 
 .button:hover {
@@ -98,8 +99,12 @@ a:active {
   color: #ffffff;
 }
 
+img {
+  width: 100%;
+}
+
 svg {
-  width: 5%;
+  width: 100%;
 }
 
 /* Layout styling */
@@ -119,7 +124,7 @@ svg {
 }
 
 #hero h1 {
-  text-align: center
+  text-align: center;
 }
 
 #hero span {
@@ -131,7 +136,17 @@ svg {
 }
 
 .logo {
-  max-width: 250pm;
+  display: inline-block;
+  max-width: 250px;
+}
+
+.projectImgs {
+  width: 40%;
+}
+
+.socialImgs {
+  width: 20%;
+  display: inline-block;
 }
 
 nav>ul {
@@ -173,15 +188,19 @@ main {
     padding: 20px 0 13px;
   }
 
+  .col-md-6 {
+    width: 50%
+  }
+
+  .col-md-3 {
+    width: 50%
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-}
-
-.col-md-6 {
-  width: 50%
 }
 
 [class*="col-"] {
@@ -196,15 +215,24 @@ main {
 }
 
 /*Large devices (1024px and larger)*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {}
+
+.col-lg-6 {
+  width: 50%
 }
 
 /*X-large devices (1440px and larger)*/
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {}
+
+.col-xl-6 {
+  width: 50%
 }
 
 /*Extra-large devices (1920px and larger)*/
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {}
+
+.col-xl-6 {
+  width: 50%
 }
 
 .container {
@@ -214,9 +242,17 @@ main {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -228,8 +264,13 @@ main {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transition: (200px, 50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transition: (200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -240,9 +281,14 @@ main {
   animation-timing-function: linear;
 }
 
-@@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transition: (100px, 48px);}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transition: (100px, 48px);
+  }
 }
 
 .cloud-back {
