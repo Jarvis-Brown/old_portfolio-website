@@ -137,7 +137,7 @@ svg {
 
 .logo {
   display: inline-block;
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .projectImgs {
@@ -153,13 +153,46 @@ svg {
   width: 50px;
 }
 
+.navtoggle li:not(:last-child) {
+  dsplay: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li {
+  display: block
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+nav>ul {
+  margin: 1em 0;
 }
 
 nav>ul>li>a {
@@ -182,7 +215,7 @@ nav>ul>li>a:visited {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 /*Medium devices (640px and larger)*/
@@ -205,6 +238,14 @@ main {
     float: right;
     margin-top: 4px;
   }
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
 }
 
 [class*="col-"] {
