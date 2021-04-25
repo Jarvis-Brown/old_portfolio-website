@@ -153,17 +153,16 @@ svg {
   width: 50px;
 }
 
+
 .navtoggle li:not(:last-child) {
-  display: inline-block;
+  display: none;
+  text-align: right;
 }
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li {
-  display: block
-}
 
 .navtoggle li .icon {
   position: absolute;
@@ -176,7 +175,10 @@ svg {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+
+
+div.navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
@@ -206,6 +208,9 @@ nav>ul>li>a:hover {
   color: #DEB887;
 }
 
+nav>ul>li>a.icon:hover {
+  color: #191970;
+}
 nav>ul>li>a:active {
   color: #191970;
 }
@@ -225,6 +230,14 @@ main {
     padding: 20px 0 13px;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%
   }
@@ -238,14 +251,6 @@ main {
     float: right;
     margin-top: 4px;
   }
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-.navtoggle li:not(:last-child) {
-  dsplay: none;
 }
 
 [class*="col-"] {
