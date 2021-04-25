@@ -154,7 +154,7 @@ svg {
 }
 
 .navtoggle li:not(:last-child) {
-  dsplay: none;
+  display: inline-block;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -245,7 +245,7 @@ nav>ul>li {
 }
 
 .navtoggle li:not(:last-child) {
-  display: inline-block;
+  dsplay: none;
 }
 
 [class*="col-"] {
